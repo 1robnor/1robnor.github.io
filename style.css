@@ -2,13 +2,11 @@
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.618em;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 html {
     font-size: 16px;
-
+    background-image: url('images/yeshi-kangrang-PM_VwL2ypes-unsplash.jpg') no-repeat center center fixed;
     margin-top: 3em;
 }
 
@@ -27,7 +25,7 @@ footer {
 
 
 header {
-    padding: 2em 0;
+    padding: 2em 2em;
 }
 
 header h1 {
@@ -60,4 +58,60 @@ nav a {
 
 nav a:hover {
     background: #666;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    max-width: 70vw;
+    min-width: 150px;
+    margin: 2vw auto;
+    margin-top: 0;
+    padding: 1em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2em;
+}
+
+
+section > p {
+    margin: 1em, 0;
+}
+
+section ul {
+    padding-left: 1.5;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 1em;
+}
+
+#projects article{
+    background: #ccc;
+    padding: 1em;
+}
+
+#projects article img{
+    border: 1px solid #333;
+}
+
+.projectHeader {
+    grid-column: 1 / -1;
+    margin-top: 0;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background: #666;
+    color: #fff;
+    padding: 1em, 0;
+    text-align: center;
 }
